@@ -1,5 +1,6 @@
-package org.firstinspires.ftc.teamcode.drive.robot;
-
+//aici vad ca folositi o biblioteca speciala, probabil fct pt asa cv, multa mapare pe care inca nu o inteleg foarte bine asa ca nu comentez codul la fel meticulos ca data trecuta 
+package org.firstinspires.ftc.teamcode.drive.robot;// adica eu inteleg din chestia asta ca voi cumva mapati mai tot, pt a asigura un control optim la robot, setati viteza motoarelor si folositi API-uri ( alte chestii pe care nu le stiu inca, dar urmeaza sa le invat)
+// si dc ajuta, am observat ca nati dat delete la sfarsitul programului. Presupun ca asta nu e ca C++, si are cos de gunoiz
 import androidx.annotation.NonNull;
 
 import com.acmerobotics.dashboard.config.Config;
