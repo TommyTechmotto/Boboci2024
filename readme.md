@@ -24,8 +24,8 @@ Dacă întâmpini o problemă în procesul de rezolvare a temei, te încurajăm 
 ## Cum descarci acest repository?
 
 ### 1. De pe GitHub.com
-
-Accesați [repoul](https://github.com/robosapiensprogramare/Boboci2024). Deasupra fișierelor va apărea un buton verde pe care scrie „<> Code”. Apăsați pe „Download ZIP” pentru a descărca repository-ul sub formă de fișier ZIP.
+](
+Accesați [repoulhttps://github.com/robosapiensprogramare/Boboci2024). Deasupra fișierelor va apărea un buton verde pe care scrie „<> Code”. Apăsați pe „Download ZIP” pentru a descărca repository-ul sub formă de fișier ZIP.
 
 ### 2. De pe Git Bash
 
