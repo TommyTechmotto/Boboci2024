@@ -49,13 +49,13 @@ public class LinearDriveMode extends LinearOpMode { // un fel de main, doar fct 
 
 
             if (gamepad2.left_bumper) {// dc se apasa left bumper macaraua se duce in directia 1, se misca in partea 5, se pregateste sa se exista 3.3 unitati, se extind 3.3 unitati
-                robot.crane.slidesDirection = 1;
+                robot.crane.slidesDirection = -1;
                 robot.crane.setSlides(5);
                 if(robot.crane.slideEncoderLastPosition > robot.crane.slideEncoder.getVoltage()){
                     robot.crane.slideExtension -= 3.3;
                 }
             } else if (gamepad2.right_bumper) {// cam la fel, doar ca face referire la situatia in care apesi right bumperul
-                robot.crane.slidesDirection = -1;
+                robot.crane.slidesDirection = 1;
                 robot.crane.setSlides(5);
                 if(robot.crane.slideEncoderLastPosition < robot.crane.slideEncoder.getVoltage()){
                     robot.crane.slideExtension += 3.3;
@@ -66,10 +66,10 @@ public class LinearDriveMode extends LinearOpMode { // un fel de main, doar fct 
             robot.crane.slideEncoderLastPosition = robot.crane.slideEncoder.getVoltage();
 //actualizeaza ultima pozitie a macaralei
 
-            if(gamepad2.left_trigger > 0.1){//controleaza pozitia macaralei in sus sau in jos
+            if(gamepad2.left_trigger > 0.2){//controleaza pozitia macaralei in sus sau in jos
                 robot.crane.craneTarget -= (int) calculateThrottle(gamepad2.left_trigger);
             }
-            else if(gamepad2.right_trigger > 0.1){
+            else if(gamepad2.right_trigger > 0.2){
                 robot.crane.craneTarget += (int) calculateThrottle(gamepad2.right_trigger);
             }// presupun ca seteaza puterea motoarelor, pt a fi potrivita pt diversele situatii din acest sezon
             robot.crane.motorCrane1.setPower(robot.crane.cranePower(robot.crane.craneTarget));
